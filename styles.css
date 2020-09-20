@@ -43,6 +43,9 @@ header li a:hover {
     text-decoration: none;
     background-color: #f5abc7;
     border-radius: 10px;
+
+    transition-property: all;
+    transition-duration: 2000ms;
 }
 main{
     background-color: black;
@@ -51,19 +54,37 @@ footer{
     text-align: center;
     color: white;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 250px;
     background-color: #55147a;
+    color: #f5abc7;
 }
-footer img {
+.footer-marca{
+    font-family: 'Lobster', cursive;
+    color: #fddc76;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-marca img{
+    width: 10rem;
+    height: 10rem;
+}
+#redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#redes p{
+    margin:0;
+}
+#redes img {
     width: 40px;
+    margin: .5em;
 }
 #envios{
     padding: 10px 0;
 }
-/* footer h4{
-    margin: 1em
-} */
 footer iframe {
     width: 90%;
     height: 200px;
